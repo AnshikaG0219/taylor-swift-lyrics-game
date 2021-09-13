@@ -60,6 +60,8 @@ export default function Game() {
           <FormatQuoteRoundedIcon className={classes.quoteIcon} />
           <br />
           {lyrics.quote}
+          <br/>
+          <p style={{fontSize: '0.9rem', marginTop: '0.5rem'}}>💡Hint : {lyrics.album}</p>
         </Typography>
         <div className={classes.field}>
           <TextField
@@ -84,14 +86,14 @@ export default function Game() {
           Get Quote
         </Button>
       </Container>
-      <Confetti
+      {/* <Confetti
         run={show}
         recycle={false}
         onConfettiComplete={(confetti) => {
           setShow(false);
           confetti.reset();
         }}
-      />
+      /> */}
     </ThemeProvider>
   );
 }
