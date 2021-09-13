@@ -66,6 +66,7 @@ export default function Game() {
             label="Guess the song"
             variant="filled"
             value={song}
+            className={classes.text}
             onChange={(e) => {
               setSong(e.target.value);
             }}

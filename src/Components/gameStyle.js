@@ -55,6 +55,12 @@ export const useStyles = makeStyles((theme) => ({
     background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
     color: '#fff',
     borderRadius: '0',
+    fontWeight: 'bold',
+    letterSpacing: '0.2rem',
     padding: '1rem 2rem',
-  }
+    [theme.breakpoints.down("md")]:{
+      width: '50%',
+      padding: '0.5rem'
+    }
+  },
 }));
