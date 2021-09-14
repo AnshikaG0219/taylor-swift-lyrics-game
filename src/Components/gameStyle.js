@@ -9,7 +9,7 @@ export const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     height: "100%",
     width: "100%",
-    padding: "4rem 0rem",
+    padding: "3rem 0rem",
   },
   head: {
     fontSize: "4rem",

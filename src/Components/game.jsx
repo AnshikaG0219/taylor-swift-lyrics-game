@@ -1,17 +1,10 @@
-import {
-  Container,
-  Button,
-  ThemeProvider,
-  createTheme,
-  Typography,
-  TextField,
-} from "@material-ui/core";
+import {Container, Button, ThemeProvider, createTheme, Typography, TextField} from "@material-ui/core";
 import React, { useState, useEffect } from "react";
 import { useStyles } from "./gameStyle";
 import FormatQuoteRoundedIcon from "@material-ui/icons/FormatQuoteRounded";
 import Confetti from "react-confetti";
 
-export default function Game() {
+export default function Game(){
   const classes = useStyles();
   const [lyrics, setLyrics] = useState("");
   const [song, setSong] = useState("");
@@ -86,14 +79,14 @@ export default function Game() {
           Get Quote
         </Button>
       </Container>
-      {/* <Confetti
+      <Confetti
         run={show}
         recycle={false}
         onConfettiComplete={(confetti) => {
           setShow(false);
           confetti.reset();
         }}
-      /> */}
+      />
     </ThemeProvider>
   );
 }
